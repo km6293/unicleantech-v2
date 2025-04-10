@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Section4.module.css';
-
+import Image from 'next/image';
 const Section4 = () => {
   const sections = [
     {
@@ -33,7 +33,7 @@ const Section4 = () => {
             <button className={styles.button}>바로 시작하기</button>
           </div>
           <div className={styles.imageContainer}>
-            <img src={section.image} alt={`Template ${index + 1}`} className={styles.image} />
+            <Image src={section.image} alt={`Template ${index + 1}`} className={styles.image} fill />
           </div>
         </div>
       ))}

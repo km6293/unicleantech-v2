@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "./footer.module.css";
+import style from "./Footer.module.css";
 import Link from "next/link";
 
 export default function Footer() {
@@ -26,12 +26,12 @@ export default function Footer() {
     },
   ];
 
-  const menuItems = {
-    '회사소개': ['인사말', '연혁', '오시는 길'],
-    '사업분야': ['사업분야 디자인1', '사업분야 디자인2'],
-    '제품소개': ['제품소개'],
-    '고객지원': ['공지사항', '뉴스', '자주묻는질문', '문의하기'],
-  };
+  // const menuItems = {
+  //   '회사소개': ['인사말', '연혁', '오시는 길'],
+  //   '사업분야': ['사업분야 디자인1', '사업분야 디자인2'],
+  //   '제품소개': ['제품소개'],
+  //   '고객지원': ['공지사항', '뉴스', '자주묻는질문', '문의하기'],
+  // };
 
   return (
     <footer className={style.footer}>

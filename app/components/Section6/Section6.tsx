@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from './Section6.module.css';
-
+import Image from 'next/image';
 const Section6 = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -47,7 +47,7 @@ const Section6 = () => {
         </div>
         
         <div className={styles.imageContainer}>
-          <img src="/images/hero-image.jpg" alt="FAQ" className={styles.image} />
+          <Image src="/images/hero-image.jpg" alt="FAQ" className={styles.image} fill />
         </div>
       </div>
     </section>

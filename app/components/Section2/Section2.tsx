@@ -2,12 +2,12 @@
 
 import { useEffect, useRef, useState } from 'react';
 import styles from './Section2.module.css';
-
+import Image from 'next/image';
 const Section2 = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const circleRef = useRef<HTMLDivElement>(null);
   const videoRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [visibleVideos, setVisibleVideos] = useState<boolean[]>([]);
+  const [visibleVideos] = useState<boolean[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -111,7 +111,7 @@ const Section2 = () => {
                       allowFullScreen
                     />
                   ) : (
-                    <img src={video.thumbnail} alt={video.title} />
+                    <Image src={video.thumbnail} alt={video.title} fill />
                   )}
                 </div>
                 <h3 className={styles.videoTitle}>{video.title}</h3>
